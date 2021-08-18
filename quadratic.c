@@ -1,16 +1,4 @@
 #include "quadratic.h"
-const float e = 0.0001;
-
-enum NUM_ROOTS {
-    ZERO = 0,
-    ONE,
-    TWO,
-    INF = 10
-};
-
-enum ERRORS {
-    FILE_NOT_FOUND = 1
-};
 
 int main(void){
     setlocale(LC_ALL, "Russian");
@@ -22,26 +10,7 @@ int main(void){
             fprintf(stderr, "файл не найден\n");
             return FILE_NOT_FOUND;
         }
-
-        int kolvo_str = 0;
-        fscanf(in,"%d",&kolvo_str);
-        char ch = getc(in);
-
-        for(int i = 0;i < kolvo_str; ++i){
-            float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
-            if (input_f(&a, &b, &c, in) == 1){
-                    fprintf(stderr,"нечисленный символ");
-                    break;
-                }
-
-            int kol = quadratic(a, b, c, &x1, &x2);
-            char ans[30] = "";
-            fgets(ans, 30, in);
-
-            printf("тест: %.2f %.2f %.2f ответ: %s", a , b , c, ans);
-            output(kol , x1 , x2);
-        }
-
+        vvod_from_file(in);
         fclose(in);
     }
 
@@ -57,13 +26,30 @@ int main(void){
             }
             int kol = quadratic(a, b, c, &x1 , &x2);
             output(kol , x1 , x2);
-    }
+        }
 
     #endif
 
 }
 
+void vvod_from_file(FILE *in){
+    int kolvo_str = 0;
+    fscanf(in, "%d ", &kolvo_str);
 
+    for(int i = 0;i < kolvo_str; ++i){
+        float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
+        if (input_f(&a, &b, &c, in) == 1){
+                fprintf(stderr, "нечисленный символ");
+                break;
+        }
+
+        int kol = quadratic(a, b, c, &x1, &x2);
+        char ans[30] = "";
+        fgets(ans, 30, in);
+        printf("тест: %.2f %.2f %.2f ответ: %s", a , b , c, ans);
+        output(kol , x1 , x2);
+    }
+}
 
 
 

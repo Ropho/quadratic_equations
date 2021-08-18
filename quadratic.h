@@ -6,7 +6,19 @@
 
 
 
-#define NDEBUG_MODE
+//#define NDEBUG_MODE
+const float e = 0.0001;
+
+enum NUM_ROOTS {
+    ZERO = 0,
+    ONE,
+    TWO,
+    INF = 10
+};
+
+enum ERRORS {
+    FILE_NOT_FOUND = 1
+};
 
 
 /*!
@@ -65,5 +77,10 @@ int quadratic(float a, float b, float c, float *x1, float *x2);
 int input_f(float *a, float *b, float *c, FILE *in);
 
 
-
+/*!
+\brief inputs, calculates and prints in the console roots of the given in the file
+quadratic equation
+\param[in] in - pointer on the file
+*/
+void vvod_from_file(FILE *in);
 
