@@ -3,10 +3,9 @@
 #include <string.h>
 #include <locale.h>
 #include <assert.h>
+#include <windows.h>
 
-
-
-//#define NDEBUG_MODE
+#define NDEBUG_MODE
 const float e = 0.0001;
 
 enum NUM_ROOTS {

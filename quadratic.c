@@ -1,27 +1,26 @@
 #include "quadratic.h"
 
 int main(void){
-    setlocale(LC_ALL, "Russian");
 
     #ifndef NDEBUG_MODE
-    {                            //ВВОД ИЗ ФАЙЛА
+    {
         FILE *in = NULL;
         if ((in = fopen("input.txt", "r")) == NULL){
-            fprintf(stderr, "файл не найден\n");
+            fprintf(stderr, "file not found\n");
             return FILE_NOT_FOUND;
         }
         vvod_from_file(in);
         fclose(in);
     }
 
-    #else           //ВВОД ИЗ КОНСОЛИ
+    #else
 
         while(1){
-            printf("введите аргументы уравнения a * x ^ 2 + b * x + c = 0\n");
+            printf("input equation like a * x ^ 2 + b * x + c = 0\n");
             float a = 0, b = 0,c = 0, x1 = 0, x2 = 0;
 
             if(input(&a, &b, &c) == 1){
-                printf("ВВЕДЕН нечисловой символ((((");
+                printf("Symbol not digit");
                 return ONE;
             }
             int kol = quadratic(a, b, c, &x1 , &x2);
@@ -29,7 +28,7 @@ int main(void){
         }
 
     #endif
-
+    return 0;
 }
 
 void vvod_from_file(FILE *in){
@@ -39,14 +38,14 @@ void vvod_from_file(FILE *in){
     for(int i = 0;i < kolvo_str; ++i){
         float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
         if (input_f(&a, &b, &c, in) == 1){
-                fprintf(stderr, "нечисленный символ");
+                fprintf(stderr, "error");
                 break;
         }
 
         int kol = quadratic(a, b, c, &x1, &x2);
         char ans[30] = "";
         fgets(ans, 30, in);
-        printf("тест: %.2f %.2f %.2f ответ: %s", a , b , c, ans);
+        printf("test: %.2f %.2f %.2f   |  answer: %s", a , b , c, ans);
         output(kol , x1 , x2);
     }
 }
@@ -74,34 +73,54 @@ int input(float *a, float *b, float *c){
     return ZERO;
 }
 
+int input_f(float *a, float *b, float *c, FILE *in){
+    assert(a != NULL);
+    assert(b != NULL);
+    assert(c != NULL);
+    assert(! (a == b || b == c || a == c));
+
+    if (fscanf(in, "%f", a) == 0)
+        return 1;
+    if (fscanf(in, "%f", b) == 0)
+        return 1;
+    if (fscanf(in, "%f", c) == 0)
+        return 1;
+    return 0;
+}
+
 void output(int kol, float x1, float x2){
     switch (kol)
     {
     case INF:
-        printf("любое число\n");
+        printf("INF\n");
         break;
     case ZERO:
-        printf("нет корней\n");
+        printf("ZERO roots\n");
         break;
-    case ONE:
+    case ONE:{
         if (!check(x1, 0))
             printf("x == %.2f\n", x1);
         else
             printf("x == 0\n");
+    }
         break;
-    default:
-         if (check(x1, 0) && !check(x2, 0))
+    case TWO:{
+        if (check(x1, 0) && !check(x2, 0))
             printf("x1 == 0 \t x2 == %.2f\n", x2);
         else if (!check(x1 ,0) && check(x2, 0))
             printf("x1 == %.2f \t x2 == 0\n", x1);
         else
             printf("x1 == %.2f \t x2 == %.2f\n", x1, x2);
+        }
+        break;
+    default:
         break;
     }
 }
 
 
 int linear(float a, float b, float c, float *x1, float *x2){
+    assert(x1 != NULL);
     assert(x2 != NULL);
     assert(x1 != x2);
 
@@ -142,17 +161,4 @@ int quadratic(float a, float b, float c, float *x1, float *x2){
     }
 }
 
-int input_f(float *a, float *b, float *c, FILE *in){
-    assert(a != NULL);
-    assert(b != NULL);
-    assert(c != NULL);
-    assert(! (a == b || b == c || a == c));
 
-    if (fscanf(in, "%f", a) == 0)
-        return 1;
-    if (fscanf(in, "%f", b) == 0)
-        return 1;
-    if (fscanf(in, "%f", c) == 0)
-        return 1;
-    return 0;
-}
