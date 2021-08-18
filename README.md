@@ -1,4 +1,4 @@
-Quadratic equations:
+#Quadratic equations:
 
 A universal programm used for solving quadratic equations.
 
