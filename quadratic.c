@@ -35,7 +35,7 @@ void vvod_from_file(FILE *in){
     int kolvo_str = 0;
     fscanf(in, "%d ", &kolvo_str);
 
-    for(int i = 0;i < kolvo_str; ++i){
+    for (int i = 0;i < kolvo_str; ++i){
         float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
         if (input_f(&a, &b, &c, in) == 1){
                 fprintf(stderr, "error");
@@ -43,10 +43,47 @@ void vvod_from_file(FILE *in){
         }
 
         int kol = quadratic(a, b, c, &x1, &x2);
-        char ans[30] = "";
-        fgets(ans, 30, in);
-        printf("test: %.2f %.2f %.2f   |  answer: %s", a , b , c, ans);
-        output(kol , x1 , x2);
+        int ans_kol_roots = 0;
+        fscanf(in, "%d ", &ans_kol_roots);
+
+        switch (kol){
+
+        case ZERO:{
+            if (ans_kol_roots == ZERO)
+                printf("%d GOOD\n", i + 1);
+            else
+                printf("%d BAD\n", i + 1);
+            break;
+        }
+        case ONE:{
+            float temp = 0;
+            fscanf(in," %f", &temp);
+            if (check(x1, temp))
+                printf("%d GOOD\n", i + 1);
+            else
+                printf("%d BAD\n", i + 1);
+            break;
+        }
+        case TWO:{
+            float temp1 = 0, temp2 = 0;
+            fscanf(in," %f %f ", &temp1, &temp2);
+            if ((check(x1, temp1) && check(x2, temp2)) || (check(x1, temp2) && check(x2, temp1)))
+                printf("%d GOOD\n", i + 1);
+            else
+                printf("%d BAD\n", i + 1);
+            break;
+        }
+        case INF:{
+            if(ans_kol_roots == INF)
+                printf("%d GOOD\n", i + 1);
+            else
+                printf("%d BAD\n", i + 1);
+            break;
+        }
+        default:
+            break;
+        }
+
     }
 }
 
@@ -80,12 +117,13 @@ int input_f(float *a, float *b, float *c, FILE *in){
     assert(! (a == b || b == c || a == c));
 
     if (fscanf(in, "%f", a) == 0)
-        return 1;
-    if (fscanf(in, "%f", b) == 0)
-        return 1;
-    if (fscanf(in, "%f", c) == 0)
-        return 1;
-    return 0;
+        return ONE;
+    else if (fscanf(in, "%f", b) == 0)
+        return ONE;
+    else if (fscanf(in, "%f", c) == 0)
+        return ONE;
+    else
+        return ZERO;
 }
 
 void output(int kol, float x1, float x2){

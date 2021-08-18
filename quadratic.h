@@ -5,7 +5,8 @@
 #include <assert.h>
 #include <windows.h>
 
-#define NDEBUG_MODE
+
+//#define NDEBUG_MODE
 const float e = 0.0001;
 
 enum NUM_ROOTS {
@@ -68,7 +69,7 @@ int quadratic(float a, float b, float c, float *x1, float *x2);
 
 
  /*!
- \brief inputs a, b, c (coeffs. of the initial equation) from the given file)
+ \brief inputs a, b, c (coeffs. of the initial equation) from the given file and compares the given answer in the test with a answer from the program)
  \param[in] a, b, c - pointers on the coeffs. of the initial quadratic equation
  \param[in] in - pointer on the given file
  \returns either 1 - incorrect symbol read or 0 - correct
