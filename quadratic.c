@@ -19,9 +19,9 @@ int main(void){
             printf("input equation like a * x ^ 2 + b * x + c = 0\n");
             float a = 0, b = 0,c = 0, x1 = 0, x2 = 0;
 
-            if(input(&a, &b, &c) == 1){
+            if(input_f(&a, &b, &c, stdin) == 1){
                 printf("Symbol not digit");
-                return ONE;
+                return 0;
             }
             int kol = quadratic(a, b, c, &x1 , &x2);
             output(kol , x1 , x2);
@@ -35,7 +35,7 @@ void vvod_from_file(FILE *in){
     int kolvo_str = 0;
     fscanf(in, "%d ", &kolvo_str);
 
-    for (int i = 0;i < kolvo_str; ++i){
+    for (int i = 0; i < kolvo_str; ++i){
         float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
         if (input_f(&a, &b, &c, in) == 1){
                 fprintf(stderr, "error");
@@ -74,7 +74,7 @@ void vvod_from_file(FILE *in){
             break;
         }
         case INF:{
-            if(ans_kol_roots == INF)
+            if (ans_kol_roots == INF)
                 printf("%d GOOD\n", i + 1);
             else
                 printf("%d BAD\n", i + 1);
@@ -95,35 +95,15 @@ int check(float a, float b){
     return fabs(a - b) < e;
 }
 
-int input(float *a, float *b, float *c){
-    assert(a != NULL);
-    assert(b != NULL);
-    assert(c != NULL);
-    assert(! (a == b || b == c || a == c));
-
-    if (scanf("%f", a) == 0)
-        return ONE;
-    if (scanf("%f", b) == 0)
-        return ONE;
-    if (scanf("%f", c) == 0)
-        return ONE;
-    return ZERO;
-}
 
 int input_f(float *a, float *b, float *c, FILE *in){
+    assert(in != NULL);
     assert(a != NULL);
     assert(b != NULL);
     assert(c != NULL);
     assert(! (a == b || b == c || a == c));
 
-    if (fscanf(in, "%f", a) == 0)
-        return ONE;
-    else if (fscanf(in, "%f", b) == 0)
-        return ONE;
-    else if (fscanf(in, "%f", c) == 0)
-        return ONE;
-    else
-        return ZERO;
+    return (fscanf(in,"%f %f %f", a, b, c) != 3);
 }
 
 void output(int kol, float x1, float x2){

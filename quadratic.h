@@ -6,8 +6,8 @@
 #include <windows.h>
 
 
-//#define NDEBUG_MODE
-const float e = 0.0001;
+#define NDEBUG_MODE
+const float e = 0.01;
 
 enum NUM_ROOTS {
     ZERO = 0,
@@ -25,17 +25,6 @@ enum ERRORS {
 \brief checks whether float numbers are in epsilon vicinity (float comparison)
 */
 int check(float a, float b);
-
-
-
-
-/*!
-\brief input numbers via console
-\param[in] a, b, c - pointers on coeffs. of the initial quadratic equation
-\returns either 1 - incorrect symbol read or 0 - correct
-*/
-int input(float *a, float *b, float *c);
-
 
 
 
