@@ -4,8 +4,8 @@ int main(void){
 
     #ifndef NDEBUG_MODE
     {
-        FILE *in = NULL;
-        if ((in = fopen("input.txt", "r")) == NULL){
+        FILE *in = fopen("input.txt", "r");
+        if (in == NULL){
             fprintf(stderr, "file not found\n");
             return FILE_NOT_FOUND;
         }
@@ -19,7 +19,7 @@ int main(void){
             printf("input equation like a * x ^ 2 + b * x + c = 0\n");
             float a = 0, b = 0,c = 0, x1 = 0, x2 = 0;
 
-            if(input_f(&a, &b, &c, stdin) == 1){
+            if (input_f(&a, &b, &c, stdin) == 1){
                 printf("Symbol not digit");
                 return 0;
             }
@@ -56,18 +56,18 @@ void vvod_from_file(FILE *in){
             break;
         }
         case ONE:{
-            float temp = 0;
-            fscanf(in," %f", &temp);
-            if (check(x1, temp))
+            float root = 0;
+            fscanf(in," %f", &root);
+            if (check(x1, root))
                 printf("%d GOOD\n", i + 1);
             else
                 printf("%d BAD\n", i + 1);
             break;
         }
         case TWO:{
-            float temp1 = 0, temp2 = 0;
-            fscanf(in," %f %f ", &temp1, &temp2);
-            if ((check(x1, temp1) && check(x2, temp2)) || (check(x1, temp2) && check(x2, temp1)))
+            float root1 = 0, root2 = 0;
+            fscanf(in," %f %f ", &root1, &root2);
+            if ((check(x1, root1) && check(x2, root2)) || (check(x1, root2) && check(x2, root1)))
                 printf("%d GOOD\n", i + 1);
             else
                 printf("%d BAD\n", i + 1);
@@ -172,8 +172,9 @@ int quadratic(float a, float b, float c, float *x1, float *x2){
             return ONE;
         }
         else {
-            *x1 = (sqrt(discriminant) - b) / (2 * a);
-            *x2 = (-sqrt(discriminant) - b) / (2 * a);
+            float sqr_root = sqrt(discriminant);
+            *x1 = (sqr_root - b) / (2 * a);
+            *x2 = (-sqr_root - b) / (2 * a);
             return TWO;
         }
     }
