@@ -3,16 +3,13 @@
 
 int main (int argc, const char *argv[]) {
 
-
     #ifndef NDEBUG_MODE
-
 
         FILE *input = fopen ("input.txt", "r");
 
         if (!input) {
 
-            SetColor(White, Black);
-
+            SetColor (LightRed, Black);
             fprintf (stderr, "error (%s (%d) %s): file \"input.txt\" not found\n", __FILE__, __LINE__, __PRETTY_FUNCTION__);
 
             return ERR_FILE_NOT_FOUND;
@@ -20,9 +17,7 @@ int main (int argc, const char *argv[]) {
         quadratic_test (input);
         fclose (input);
 
-
     #else
-
 
         SetColor(White, Black);
 
@@ -33,7 +28,8 @@ int main (int argc, const char *argv[]) {
 
             if (input_coeffs_file (&a, &b, &c, stdin) == 1) {
 
-                printf ("Symbol not digit");
+                SetColor (LightBlue, Black);
+                printf ("U printed a non-digit symbol. Closing the program...");
 
                 return 0;
             }
@@ -58,8 +54,8 @@ void quadratic_test (FILE *in) {
 
         if (input_coeffs_file (&a, &b, &c, in) == 1) {
 
-            SetColor (White , Black);
-            fprintf (stderr, "NON-DIGIT INPUT");
+            SetColor (LightRed , Black);
+            fprintf (stderr, "ERROR : NON-DIGIT INPUT");
 
             break;
         }
@@ -119,8 +115,7 @@ void quadratic_test (FILE *in) {
                     printf ("%d GOOD\n", i + 1);
                 }
 
-                else
-                    {
+                else {
 
                     SetColor (LightRed, Black);
                     printf ("%d BAD\n", i + 1);

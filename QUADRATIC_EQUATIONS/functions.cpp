@@ -15,7 +15,7 @@ int check_equal (float a, float b) {
 
 
 
-int linear_solve (float a, float b, float c, float *x1, float *x2) {
+int linear_solve (float b, float c, float *x1, float *x2) {
 
     assert (x1 != NULL);
     assert (x2 != NULL);
@@ -47,11 +47,11 @@ int quadratic_solve (float a, float b, float c, float *x1, float *x2) {
     assert (x1 != x2);
 
     if (check_equal (a, 0))
-        return linear_solve (a, b, c, x1, x2);
+        return linear_solve (b, c, x1, x2);
 
     else if (c == 0) {
 
-        linear_solve (c , a , b , x1 , x2);
+        linear_solve (a , b , x1 , x2);
         *x1 = 0;
 
         return TWO;

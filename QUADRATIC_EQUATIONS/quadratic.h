@@ -1,18 +1,8 @@
-#include "stdio.h"
-#include "math.h"
-#include "string.h"
-#include "locale.h"
-#include "assert.h"
-#include "TXLib.h"
-
-#define NDEBUG_MODE
-
-
-/*! @mainpage
-HELLO, USERS OF THE "QUADRATIC EQUATIONS" PROGRAM
+/*!
+@mainpage HELLO, USERS OF THE "QUADRATIC EQUATIONS" PROGRAM
 ================================================================================================
 
-1. TO USE THE PROGRAM TYPE IN 3 COEFFICEINTS @c a, @c b, @c c OF THE QUADRATIC EQUATION ax^2+bx+c=0
+1. TO USE THE PROGRAM TYPE IN 3 COEFFICEINTS @c a, @c b, @c c OF THE QUADRATIC EQUATION ax^2+bx+c=0 and get ur roots
 
 2. TO STOP THE PROGRAM JUST TYPE IN NON-DIGIT.
 
@@ -20,6 +10,23 @@ HELLO, USERS OF THE "QUADRATIC EQUATIONS" PROGRAM
                 number of roots and possible roots. IF THE TEST WAS PASSED THE PROGRAM PRINTS "GOOD" ELSE "BAD"
 
 */
+//=======================================================================================================
+
+
+#ifndef QUDRATIC_H
+#define QUADRATIC_H
+
+
+#include "stdio.h"
+#include "math.h"
+#include "string.h"
+#include "locale.h"
+#include "assert.h"
+#include "TXLib.h"
+
+//! if commented u enter debug mode and 're able to use unit-tests from the file, otherwise standard console input
+#define NDEBUG_MODE
+
 
 //! determines used errors with a number
 enum ERRORS {
@@ -49,3 +56,6 @@ int input_coeffs_file (float *a, float *b, float *c, FILE *in);
     \param[in] in - pointer on the file
 */
 void quadratic_test (FILE *in);
+
+
+#endif // QUDRATIC_H
