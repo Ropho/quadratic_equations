@@ -8,11 +8,16 @@
 #define NDEBUG_MODE
 
 
-/*! @mainpage HELLO, USERS OF THE QUADRATIC_EQUATIONS PROGRAM
-            1) TO USE THE PROGRAM TYPE IN 3 COEFFICEINTS @c a, @c b, @c c OF THE QUADRATIC EQUATION ax^2+bx+c=0
-            2) TO STOP THE PROGRAM JUST TYPE IN NON-DIGIT.
-            3) TO DEBUG COMMENT "#define NDEBUG_MODE" AND WRITE IN THE FILE "input.txt" 3 coeffs of the equation,
-                number of roots and possible roots. IF THE TEST WASS PASSED THE PROGRAM PRINTS "GOOD" ELSE "BAD"
+/*! @mainpage
+HELLO, USERS OF THE "QUADRATIC EQUATIONS" PROGRAM
+================================================================================================
+
+1. TO USE THE PROGRAM TYPE IN 3 COEFFICEINTS @c a, @c b, @c c OF THE QUADRATIC EQUATION ax^2+bx+c=0
+
+2. TO STOP THE PROGRAM JUST TYPE IN NON-DIGIT.
+
+3. TO DEBUG COMMENT "#define NDEBUG_MODE" AND WRITE IN THE FILE "input.txt" 3 coeffs of the equation,
+                number of roots and possible roots. IF THE TEST WAS PASSED THE PROGRAM PRINTS "GOOD" ELSE "BAD"
 
 */
 
