@@ -39,34 +39,34 @@ enum ConsoleColor
 };
 
 /*!
-\brief changes the color of the text and background
-\param[in] text - desired color of the text
-\param[in] background - desired color of the background
+    \brief changes the color of the text and background
+    \param[in] text - desired color of the text
+    \param[in] background - desired color of the background
 */
 void SetColor(ConsoleColor text, ConsoleColor background);
 
 
 
 /*!
-\brief checks whether float numbers are in epsilon vicinity (float comparison)
+    \brief checks whether float numbers are in epsilon vicinity (float comparison)
 */
 int check_equal (float a, float b);
 
 
 /*!
-\brief finds the roots of the linear equation
-\param[in] a, b, c - coefficients of the equation
-\param[in] x1, x2 - pointers on possible roots of the quadratic equation
-\return number of roots of the given linear equation(ZERO, ONE, INF)
+    \brief finds the roots of the linear equation
+    \param[in] a, b, c - coefficients of the equation
+    \param[in] x1, x2 - pointers on possible roots of the quadratic equation
+    \return number of roots of the given linear equation(ZERO, ONE, INF)
 */
 int linear_solve (float a, float b, float c, float *x1, float *x2);
 
 
 /*!
-\brief finds the roots of the given quadratic equation
-\param[in] a, b, c - coefficients of the quadratic equation
-\param[in] x1, x2 - pointers on possible roots of the quadratic equation
-\return the number of roots of the given quadratic equation(ZERO, ONE, TWO)
+    \brief finds the roots of the given quadratic equation
+    \param[in] a, b, c - coefficients of the quadratic equation
+    \param[in] x1, x2 - pointers on possible roots of the quadratic equation
+    \return the number of roots of the given quadratic equation(ZERO, ONE, TWO)
 */
 int quadratic_solve (float a, float b, float c, float *x1, float *x2);
 

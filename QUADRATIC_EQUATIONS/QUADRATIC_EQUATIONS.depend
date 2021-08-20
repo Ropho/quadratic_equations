@@ -2,7 +2,7 @@
 1629466779 source:c:\users\user\desktop\kekw\check\quadratic_equations\functions.c
 	"functions.h"
 
-1629473866 c:\users\user\desktop\kekw\check\quadratic_equations\functions.h
+1629476000 c:\users\user\desktop\kekw\check\quadratic_equations\functions.h
 	"stdio.h"
 	"math.h"
 	"string.h"
@@ -10,11 +10,11 @@
 	"assert.h"
 	"TXLib.h"
 
-1629474366 source:c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.cpp
+1629475998 source:c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.cpp
 	"functions.h"
 	"quadratic.h"
 
-1629474409 c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.h
+1629476000 c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.h
 	"stdio.h"
 	"math.h"
 	"string.h"

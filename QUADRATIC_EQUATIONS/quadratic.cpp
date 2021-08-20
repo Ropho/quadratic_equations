@@ -13,7 +13,7 @@ int main (int argc, const char *argv[]) {
 
             SetColor(White, Black);
 
-            fprintf (stderr, "error (%s (%d) %s): file \"input.txt\" not found\n", __FILE__, __LINE__, __PRETTY_FUNCTION__); //perror
+            fprintf (stderr, "error (%s (%d) %s): file \"input.txt\" not found\n", __FILE__, __LINE__, __PRETTY_FUNCTION__);
 
             return ERR_FILE_NOT_FOUND;
         }

@@ -23,24 +23,24 @@ enum ERRORS {
 
 
 /*!
- *   \brief outputs the roots of the equation to the console
- *   \param[in] num_roots - quantity of roots of the equation,
- *   \param[in] x1, x2 - possible roots of the quadratic equation
+    \brief outputs the roots of the equation to the console
+    \param[in] num_roots - quantity of roots of the equation,
+    \param[in] x1, x2 - possible roots of the quadratic equation
  */
 void output_roots (int num_roots, float x1, float x2);
 
 
 /*!
- \brief inputs a, b, c (coeffs. of the equation) from the given file and compares the answer in the test with a answer from the program)
- \param[in] a, b, c - pointers on the coeffs. of the quadratic equation
- \param[in] in - pointer on the given file
- \return either 1 - incorrect symbol read or 0 - correct
+    \brief inputs a, b, c (coeffs. of the equation) from the given file and compares the answer in the test with a answer from the program)
+    \param[in] a, b, c - pointers on the coeffs. of the quadratic equation
+    \param[in] in - pointer on the given file
+    \return either 1 - incorrect symbol read or 0 - correct
  */
 int input_coeffs_file (float *a, float *b, float *c, FILE *in);
 
 
 /*!
-\brief inputs, calculates and prints in the console roots of the given in the file quadratic equation
-\param[in] in - pointer on the file
+    \brief inputs, calculates and prints in the console roots of the given in the file quadratic equation
+    \param[in] in - pointer on the file
 */
 void quadratic_test (FILE *in);
