@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1629466779 source:c:\users\user\desktop\kekw\check\quadratic_equations\functions.c
+	"functions.h"
+
+1629473866 c:\users\user\desktop\kekw\check\quadratic_equations\functions.h
+	"stdio.h"
+	"math.h"
+	"string.h"
+	"locale.h"
+	"assert.h"
+	"TXLib.h"
+
+1629474366 source:c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.cpp
+	"functions.h"
+	"quadratic.h"
+
+1629474409 c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.h
+	"stdio.h"
+	"math.h"
+	"string.h"
+	"locale.h"
+	"assert.h"
+	"TXLib.h"
+
+1629467402 source:c:\users\user\desktop\kekw\check\quadratic_equations\quadratic.c
+	"functions.h"
+
+1629474035 source:c:\users\user\desktop\kekw\check\quadratic_equations\functions.cpp
+	"functions.h"
+
