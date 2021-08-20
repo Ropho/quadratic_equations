@@ -10,16 +10,20 @@ void SetColor (ConsoleColor text, ConsoleColor background) {
 
 int check_equal (float a, float b) {
 
+    assert (!isnan(a));
+    assert (!isnan(b));
+
     return fabs (a - b) < EPS;
 }
 
 
 
-int linear_solve (float b, float c, float *x1, float *x2) {
+int linear_solve (float b, float c, float *x1) {
 
     assert (x1 != NULL);
-    assert (x2 != NULL);
-    assert (x1 != x2);
+
+    assert (!isnan(b));
+    assert (!isnan(c));
 
     if (check_equal (b, 0)){
 
@@ -33,7 +37,6 @@ int linear_solve (float b, float c, float *x1, float *x2) {
     else {
 
         *x1 = -c / b;
-        *x2 = *x1;
 
         return ONE;
     }
@@ -42,19 +45,49 @@ int linear_solve (float b, float c, float *x1, float *x2) {
 
 int quadratic_solve (float a, float b, float c, float *x1, float *x2) {
 
+    assert (!isnan(a));
+    assert (!isnan(b));
+    assert (!isnan(c));
+
     assert (x1 != NULL);
     assert (x2 != NULL);
     assert (x1 != x2);
 
     if (check_equal (a, 0))
-        return linear_solve (b, c, x1, x2);
+        return linear_solve (b, c, x1);
 
-    else if (c == 0) {
 
-        linear_solve (a , b , x1 , x2);
+    else if (check_equal(c , 0)) {
+
         *x1 = 0;
+        int num_lin_roots = linear_solve (a , b , x2);
 
-        return TWO;
+        switch (num_lin_roots) {
+
+           case ZERO:
+                return ONE;
+
+                break;
+
+           case ONE:
+                if (check_equal (*x1, *x2))
+                    return ONE;
+                else
+                    return TWO;
+
+                break;
+
+           case INF:
+                return INF;
+
+                break;
+
+           default:
+               return INF;
+
+                break;
+        }
+
     }
 
     else {
@@ -73,9 +106,12 @@ int quadratic_solve (float a, float b, float c, float *x1, float *x2) {
 
         else {
 
-            float sqr_root = sqrt (discriminant);
-            *x1 = (sqr_root - b) / (2 * a);
-            *x2 = (-sqr_root - b) / (2 * a);
+            discriminant = sqrt (discriminant);
+            a = 2 * a;
+
+            // "discriminant" and "a" values were changed to fasten the program
+            *x1 = (-b + discriminant) / a;
+            *x2 = (-b - discriminant) / a;
 
             return TWO;
         }

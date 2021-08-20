@@ -10,7 +10,7 @@ int main (int argc, const char *argv[]) {
         if (!input) {
 
             SetColor (LightRed, Black);
-            fprintf (stderr, "error (%s (%d) %s): file \"input.txt\" not found\n", __FILE__, __LINE__, __PRETTY_FUNCTION__);
+            fprintf (stderr, "ERROR : (%s\n%s (%d))\nfile \"input.txt\" not found\n", __FILE__, __PRETTY_FUNCTION__, __LINE__);
 
             return ERR_FILE_NOT_FOUND;
         }
@@ -24,7 +24,7 @@ int main (int argc, const char *argv[]) {
         while (1) {
 
             printf ("input equation like a * x ^ 2 + b * x + c = 0\n");
-            float a = 0, b = 0,c = 0, x1 = 0, x2 = 0;
+            float a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
 
             if (input_coeffs_file (&a, &b, &c, stdin) == 1) {
 
@@ -45,24 +45,33 @@ int main (int argc, const char *argv[]) {
 
 void quadratic_test (FILE *in) {
 
+    assert(in != NULL);
+
     int num_lines = 0;
     fscanf (in, "%d ", &num_lines);
 
     for (int i = 0; i < num_lines; ++i) {
 
-        float a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
+        float a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
 
         if (input_coeffs_file (&a, &b, &c, in) == 1) {
 
             SetColor (LightRed , Black);
-            fprintf (stderr, "ERROR : NON-DIGIT INPUT");
+            fprintf (stderr, "ERROR : COEFFICIENT NON-DIGIT INPUT");
 
             break;
         }
 
         int num_roots = quadratic_solve (a, b, c, &x1, &x2);
         int ans_num_roots = 0;
-        fscanf (in, "%d ", &ans_num_roots);
+
+        if (fscanf (in, "%d ", &ans_num_roots) == 0) {
+
+            SetColor (LightRed , Black);
+            fprintf (stderr, "ERROR : NUMBER OF ROOTS NON-DIGIT INPUT");
+
+            break;
+        }
 
         switch (num_roots) {
 
@@ -77,7 +86,7 @@ void quadratic_test (FILE *in) {
                 else {
 
                     SetColor (LightRed, Black);
-                    printf ("%d BAD\n", i + 1);
+                    printf ("%d BAD : TEST ROOT AND CALCULATED ROOT ARE DIFFERENT\n", i + 1);
                 }
 
                 break;
@@ -85,19 +94,41 @@ void quadratic_test (FILE *in) {
 
             case ONE: {
 
-                float root = 0;
-                fscanf (in," %f", &root);
-                int good = check_equal (x1, root);
+                if (ans_num_roots == ONE) {
 
-                if (good) {
+                    float root = NAN;
 
-                    SetColor (LightGreen, Black);
-                    printf ("%d GOOD\n", i + 1);
+                    if (fscanf (in," %f", &root) == 1) {
+
+                        int good = check_equal (x1, root);
+
+                        if (good) {
+
+                            SetColor (LightGreen, Black);
+                            printf ("%d GOOD\n", i + 1);
+                        }
+
+                        else {
+
+                            SetColor (LightRed, Black);
+                            printf ("%d BAD : TEST ROOT AND CALCULATED ROOT ARE DIFFERENT\n", i + 1);
+
+                        }
+                    }
+
+                    else {
+
+                        SetColor (LightRed , Black);
+                        fprintf (stderr, "ERROR : ROOT NON-DIGIT INPUT");
+
+                        break;
+                    }
                 }
+
                 else {
 
                     SetColor (LightRed, Black);
-                    printf ("%d BAD\n", i + 1);
+                    printf ("%d BAD : NUMBER OF TEST AND CALCULATED ROOTS DOESN'T MATCH\n", i + 1);
                 }
 
                 break;
@@ -105,20 +136,41 @@ void quadratic_test (FILE *in) {
 
             case TWO: {
 
-                float root1 = 0, root2 = 0;
-                fscanf (in," %f %f ", &root1, &root2);
+                if (ans_num_roots == TWO) {
 
-                if ((check_equal (x1, root1) && check_equal (x2, root2)) ||
-                    (check_equal (x1, root2) && check_equal (x2, root1))) {
+                    float root1 = NAN, root2 = NAN;
+                    if (fscanf (in," %f %f ", &root1, &root2) == 2) {
 
-                    SetColor (LightGreen, Black);
-                    printf ("%d GOOD\n", i + 1);
+                        if ((check_equal (x1, root1) && check_equal (x2, root2)) ||
+                            (check_equal (x1, root2) && check_equal (x2, root1))) {
+
+                            SetColor (LightGreen, Black);
+                            printf ("%d GOOD\n", i + 1);
+                        }
+
+                        else {
+
+                            SetColor (LightRed, Black);
+                            printf ("%d BAD : TEST ROOTS AND CALCULATED ROOTS ARE DIFFERENT\n", i + 1);
+
+                        }
+
+                    }
+
+                    else {
+
+                        SetColor (LightRed , Black);
+                        fprintf (stderr, "ERROR : ROOTS NON-DIGIT INPUT");
+
+                        break;
+
+                    }
                 }
 
                 else {
 
                     SetColor (LightRed, Black);
-                    printf ("%d BAD\n", i + 1);
+                    printf ("%d BAD : TEST ROOT AND CALCULATED ROOT ARE DIFFERENT\n", i + 1);
                 }
 
                 break;
@@ -135,7 +187,7 @@ void quadratic_test (FILE *in) {
                 else {
 
                     SetColor (LightRed, Black);
-                    printf ("%d BAD\n", i + 1);
+                    printf ("%d BAD : TEST ROOT AND CALCULATED ROOT ARE DIFFERENT\n", i + 1);
                 }
 
                 break;
@@ -151,12 +203,12 @@ void quadratic_test (FILE *in) {
 int input_coeffs_file (float *a, float *b, float *c, FILE *in) {
 
     assert (in != NULL);
-    assert (a != NULL);
-    assert (b != NULL);
-    assert (c != NULL);
+    assert (a  != NULL);
+    assert (b  != NULL);
+    assert (c  != NULL);
     assert (! (a == b || b == c || a == c));
 
-    return (fscanf (in,"%f %f %f", a, b, c) != 3);
+    return (fscanf (in, "%f %f %f", a, b, c) != 3);
 }
 
 void output_roots (int num_roots, float x1, float x2) {
@@ -179,6 +231,8 @@ void output_roots (int num_roots, float x1, float x2) {
 
         case ONE: {
 
+            assert (!isnan(x1));
+
             if (!check_equal (x1, 0))
                 printf ("x == %.2f\n", x1);
 
@@ -188,7 +242,10 @@ void output_roots (int num_roots, float x1, float x2) {
             break;
         }
 
-        case TWO:{
+        case TWO: {
+
+            assert (!isnan(x1));
+            assert (!isnan(x2));
 
             if (check_equal (x1, 0) && !check_equal (x2, 0))
                 printf ("x1 == 0 \t x2 == %.2f\n", x2);
