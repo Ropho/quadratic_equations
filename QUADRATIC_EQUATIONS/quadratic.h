@@ -17,12 +17,12 @@
 #define QUADRATIC_H
 
 
+#include "TXLib.h"
 #include "stdio.h"
 #include "math.h"
 #include "string.h"
 #include "locale.h"
 #include "assert.h"
-#include "TXLib.h"
 
 //! if commented u enter debug mode and 're able to use unit-tests from the file, otherwise standard console input
 #define NDEBUG_MODE

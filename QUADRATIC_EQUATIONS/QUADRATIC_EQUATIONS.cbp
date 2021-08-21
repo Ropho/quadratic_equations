@@ -31,9 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="functions.cpp" />
+		<Unit filename="functions.h" />
+		<Unit filename="quadratic.cpp" />
+		<Unit filename="quadratic.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

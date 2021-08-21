@@ -1,0 +1,148 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76AEB5CC в функции ungetwc(). Попытка прочесть данные по адресу 0x0000003B в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x005572C0 (32-bit), Flags: Cmdre0, Thread: 0x4768 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76AEB5CC in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x76AE3997 in C:\WINDOWS\System32\msvcrt.dll: fprintf()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 20 2021 23:48:47, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 20 2021 23:49:10
+
+Run file:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe
+Directory:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76AEB5CC в функции ungetwc(). Попытка прочесть данные по адресу 0x0000003B в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x005572C0 (32-bit), Flags: Cmdre0, Thread: 0x4768 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76AEB5CC in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x76AE3997 in C:\WINDOWS\System32\msvcrt.dll: fprintf()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 20 2021 23:48:47, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 20 2021 23:49:10
+
+Run file:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe
+Directory:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76AEB5CC в функции ungetwc(). Попытка прочесть данные по адресу 0x0000000D в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x005572C0 (32-bit), Flags: Cmdre0, Thread: 0x348C (Main), GetLastError(): 2 (Не удается найти указанный файл), errno: 2 (No such file or directory), _doserrno: 2 (No such file or directory). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76AEB5CC in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x76AE3997 in C:\WINDOWS\System32\msvcrt.dll: fprintf()
+# 4 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 5 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 21 2021 00:15:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 21 2021 00:15:36
+
+Run file:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe
+Directory:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76AEB5CC в функции ungetwc(). Попытка прочесть данные по адресу 0x0000000D в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x005572C0 (32-bit), Flags: Cmdre0, Thread: 0x348C (Main), GetLastError(): 2 (Не удается найти указанный файл), errno: 2 (No such file or directory), _doserrno: 2 (No such file or directory). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76AEB5CC in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x76AE3997 in C:\WINDOWS\System32\msvcrt.dll: fprintf()
+# 4 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 5 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 21 2021 00:15:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 21 2021 00:15:36
+
+Run file:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS\bin\Release\QUADRATIC_EQUATIONS.exe
+Directory:	C:\Users\User\Desktop\kekw\check\QUADRATIC_EQUATIONS
+
+--------------------------------------------------

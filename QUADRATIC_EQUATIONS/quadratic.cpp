@@ -48,7 +48,14 @@ void quadratic_test (FILE *in) {
     assert (in != NULL);
 
     int num_lines = 0;
-    fscanf (in, "%d ", &num_lines);
+
+    if (fscanf (in, "%d ", &num_lines) == 0) {
+
+        SetColor (LightRed , Black);
+        fprintf (stderr, "ERROR : NUMBER OF LINES NON-DIGIT INPUT");
+
+
+    }
 
     for (int i = 0; i < num_lines; ++i) {
 
