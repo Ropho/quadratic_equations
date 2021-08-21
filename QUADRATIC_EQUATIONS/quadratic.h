@@ -25,7 +25,7 @@
 #include "TXLib.h"
 
 //! if commented u enter debug mode and 're able to use unit-tests from the file, otherwise standard console input
-//#define NDEBUG_MODE
+#define NDEBUG_MODE
 
 
 //! determines used errors with a number

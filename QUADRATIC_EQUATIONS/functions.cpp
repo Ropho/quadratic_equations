@@ -4,7 +4,7 @@
 void SetColor (ConsoleColor text, ConsoleColor background) {
 
    HANDLE hStdout = GetStdHandle (STD_OUTPUT_HANDLE);
-   SetConsoleTextAttribute (hStdout, (WORD)((background << 4) | text));
+   SetConsoleTextAttribute (hStdout, (WORD) ((background << 4) | text));
 }
 
 
@@ -25,7 +25,7 @@ int linear_solve (double b, double c, double *x1) {
     assert (!isnan(b));
     assert (!isnan(c));
 
-    if (check_equal (b, 0)){
+    if (check_equal (b, 0)) {
 
         if (check_equal (c, 0))
             return INF;

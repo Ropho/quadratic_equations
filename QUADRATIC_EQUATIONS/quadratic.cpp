@@ -19,7 +19,7 @@ int main (int argc, const char *argv[]) {
 
     #else
 
-        SetColor(White, Black);
+        SetColor (White, Black);
 
         while (1) {
 
@@ -45,7 +45,7 @@ int main (int argc, const char *argv[]) {
 
 void quadratic_test (FILE *in) {
 
-    assert(in != NULL);
+    assert (in != NULL);
 
     int num_lines = 0;
     fscanf (in, "%d ", &num_lines);

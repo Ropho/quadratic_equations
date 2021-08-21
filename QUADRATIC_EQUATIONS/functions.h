@@ -1,5 +1,5 @@
 /*!
-@brief Library with useful functions for solving quadratic and lineal equations and some more
+@brief Library with useful functions for solving quadratic and linear equations and some more
 ================================================================================================
 
 @note coeffs and answers of the equation can be real numbers, u can get 0, 1, 2 and infinite number of roots
@@ -56,7 +56,7 @@ enum ConsoleColor
     \param[in] text - desired color of the text
     \param[in] background - desired color of the background
 */
-void SetColor(ConsoleColor text, ConsoleColor background);
+void SetColor (ConsoleColor text, ConsoleColor background);
 
 
 
