@@ -25,7 +25,7 @@
 #include "TXLib.h"
 
 //! if commented u enter debug mode and 're able to use unit-tests from the file, otherwise standard console input
-#define NDEBUG_MODE
+//#define NDEBUG_MODE
 
 
 //! determines used errors with a number
@@ -39,7 +39,7 @@ enum ERRORS {
     \param[in] num_roots - quantity of roots of the equation,
     \param[in] x1, x2 - possible roots of the quadratic equation
  */
-void output_roots (int num_roots, float x1, float x2);
+void output_roots (int num_roots, double x1, double x2);
 
 
 /*!
@@ -48,7 +48,7 @@ void output_roots (int num_roots, float x1, float x2);
     \param[in] in - pointer on the given file
     \return either 1 - incorrect symbol read or 0 - correct
  */
-int input_coeffs_file (float *a, float *b, float *c, FILE *in);
+int input_coeffs_file (double *a, double *b, double *c, FILE *in);
 
 
 /*!

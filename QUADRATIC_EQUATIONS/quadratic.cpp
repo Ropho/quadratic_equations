@@ -24,7 +24,7 @@ int main (int argc, const char *argv[]) {
         while (1) {
 
             printf ("input equation like a * x ^ 2 + b * x + c = 0\n");
-            float a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
+            double a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
 
             if (input_coeffs_file (&a, &b, &c, stdin) == 1) {
 
@@ -52,7 +52,7 @@ void quadratic_test (FILE *in) {
 
     for (int i = 0; i < num_lines; ++i) {
 
-        float a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
+        double a = NAN, b = NAN, c = NAN, x1 = NAN, x2 = NAN;
 
         if (input_coeffs_file (&a, &b, &c, in) == 1) {
 
@@ -96,9 +96,9 @@ void quadratic_test (FILE *in) {
 
                 if (ans_num_roots == ONE) {
 
-                    float root = NAN;
+                    double root = NAN;
 
-                    if (fscanf (in," %f", &root) == 1) {
+                    if (fscanf (in," %lf", &root) == 1) {
 
                         int good = check_equal (x1, root);
 
@@ -138,8 +138,8 @@ void quadratic_test (FILE *in) {
 
                 if (ans_num_roots == TWO) {
 
-                    float root1 = NAN, root2 = NAN;
-                    if (fscanf (in," %f %f ", &root1, &root2) == 2) {
+                    double root1 = NAN, root2 = NAN;
+                    if (fscanf (in," %lf %lf ", &root1, &root2) == 2) {
 
                         if ((check_equal (x1, root1) && check_equal (x2, root2)) ||
                             (check_equal (x1, root2) && check_equal (x2, root1))) {
@@ -200,7 +200,7 @@ void quadratic_test (FILE *in) {
     }
 }
 
-int input_coeffs_file (float *a, float *b, float *c, FILE *in) {
+int input_coeffs_file (double *a, double *b, double *c, FILE *in) {
 
     assert (in != NULL);
     assert (a  != NULL);
@@ -208,10 +208,10 @@ int input_coeffs_file (float *a, float *b, float *c, FILE *in) {
     assert (c  != NULL);
     assert (! (a == b || b == c || a == c));
 
-    return (fscanf (in, "%f %f %f", a, b, c) != 3);
+    return (fscanf (in, "%lf %lf %lf", a, b, c) != 3);
 }
 
-void output_roots (int num_roots, float x1, float x2) {
+void output_roots (int num_roots, double x1, double x2) {
 
     switch (num_roots) {
 
@@ -234,7 +234,7 @@ void output_roots (int num_roots, float x1, float x2) {
             assert (!isnan(x1));
 
             if (!check_equal (x1, 0))
-                printf ("x == %.2f\n", x1);
+                printf ("x == %.2lf\n", x1);
 
             else
                 printf ("x == 0\n");
@@ -248,13 +248,13 @@ void output_roots (int num_roots, float x1, float x2) {
             assert (!isnan(x2));
 
             if (check_equal (x1, 0) && !check_equal (x2, 0))
-                printf ("x1 == 0 \t x2 == %.2f\n", x2);
+                printf ("x1 == 0 \t x2 == %.2lf\n", x2);
 
             else if (!check_equal (x1 ,0) && check_equal (x2, 0))
-                printf ("x1 == %.2f \t x2 == 0\n", x1);
+                printf ("x1 == %.2lf \t x2 == 0\n", x1);
 
             else
-                printf ("x1 == %.2f \t x2 == %.2f\n", x1, x2);
+                printf ("x1 == %.2lf \t x2 == %.2lf\n", x1, x2);
 
             break;
         }

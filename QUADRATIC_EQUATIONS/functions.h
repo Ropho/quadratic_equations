@@ -19,8 +19,8 @@
 #include "assert.h"
 #include "TXLib.h"
 
-//! the constant used in comparison of float numbers
-const float EPS = 0.01;
+//! the constant used in comparison of double numbers
+const double EPS = 0.01;
 
 //! determines used number (word) with its number in the program
 enum NUM_ROOTS {
@@ -61,9 +61,9 @@ void SetColor(ConsoleColor text, ConsoleColor background);
 
 
 /*!
-    \brief checks whether float numbers are in epsilon vicinity (float comparison)
+    \brief checks whether double numbers are in epsilon vicinity (double comparison)
 */
-int check_equal (float a, float b);
+int check_equal (double a, double b);
 
 
 /*!
@@ -72,7 +72,7 @@ int check_equal (float a, float b);
     \param[in] x1, x2 - pointers on possible roots of the quadratic equation
     \return number of roots of the given linear equation(ZERO, ONE, INF)
 */
-int linear_solve (float b, float c, float *x1, float *x2);
+int linear_solve (double b, double c, double *x1, double *x2);
 
 
 /*!
@@ -81,7 +81,7 @@ int linear_solve (float b, float c, float *x1, float *x2);
     \param[in] x1, x2 - pointers on possible roots of the quadratic equation
     \return the number of roots of the given quadratic equation(ZERO, ONE, TWO)
 */
-int quadratic_solve (float a, float b, float c, float *x1, float *x2);
+int quadratic_solve (double a, double b, double c, double* x1, double *x2);
 
 
 #endif // FUNCTIONS_H

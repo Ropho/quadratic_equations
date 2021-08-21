@@ -8,7 +8,7 @@ void SetColor (ConsoleColor text, ConsoleColor background) {
 }
 
 
-int check_equal (float a, float b) {
+int check_equal (double a, double b) {
 
     assert (!isnan(a));
     assert (!isnan(b));
@@ -18,7 +18,7 @@ int check_equal (float a, float b) {
 
 
 
-int linear_solve (float b, float c, float *x1) {
+int linear_solve (double b, double c, double *x1) {
 
     assert (x1 != NULL);
 
@@ -43,11 +43,11 @@ int linear_solve (float b, float c, float *x1) {
 }
 
 
-int quadratic_solve (float a, float b, float c, float *x1, float *x2) {
+int quadratic_solve (double a, double b, double c, double *x1, double *x2) {
 
-    assert (!isnan(a));
-    assert (!isnan(b));
-    assert (!isnan(c));
+    assert (!isnan (a));
+    assert (!isnan (b));
+    assert (!isnan (c));
 
     assert (x1 != NULL);
     assert (x2 != NULL);
@@ -92,7 +92,7 @@ int quadratic_solve (float a, float b, float c, float *x1, float *x2) {
 
     else {
 
-        float discriminant = (b * b) - (4 * a * c);
+        double discriminant = (b * b) - (4 * a * c);
 
         if (discriminant < 0)
             return ZERO;
