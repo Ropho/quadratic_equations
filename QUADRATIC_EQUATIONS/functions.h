@@ -22,6 +22,11 @@
 //! the constant used in comparison of double numbers
 const double EPS = 0.01;
 
+//! determines used errors with a number
+enum GENERAL_ERRORS {
+    ERR_UNSUP_NUM_ROOTS = -1,
+};
+
 //! determines used number (word) with its number in the program
 enum NUM_ROOTS {
     ZERO = 0,

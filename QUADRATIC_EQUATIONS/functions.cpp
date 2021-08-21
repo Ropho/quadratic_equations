@@ -62,32 +62,20 @@ int quadratic_solve (double a, double b, double c, double *x1, double *x2) {
         *x1 = 0;
         int num_lin_roots = linear_solve (a , b , x2);
 
-        switch (num_lin_roots) {
+        if (num_lin_roots == ONE) {
 
-           case ZERO:
-                return ONE;
-
-                break;
-
-           case ONE:
                 if (check_equal (*x1, *x2))
                     return ONE;
                 else
                     return TWO;
-
-                break;
-
-           case INF:
-                return INF;
-
-                break;
-
-           default:
-               return INF;
-
-                break;
         }
 
+        else {
+
+            fprintf (stderr, "ERROR : UNSUPPORTED NUMBER OF ROOTS");
+
+            return ERR_UNSUP_NUM_ROOTS;
+        }
     }
 
     else {
