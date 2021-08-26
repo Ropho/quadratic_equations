@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1630009765 source:c:\users\user\desktop\kekw\check\onegin\main.cpp
-	"stdio.h"
-	"string.h"
-	"assert.h"
-	"malloc.h"
-
