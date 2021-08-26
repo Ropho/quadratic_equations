@@ -1,0 +1,478 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448A53 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x3AAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448A53 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:09:19, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:09:21
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448A53 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x3AAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448A53 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:09:19, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:09:21
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x21DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:37:35
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x21DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:37:35
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x29F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:11
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x29F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:11
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x405C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:21
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x405C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:21
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x3208 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:36
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Ю-ху! Переполнение стека!
+
+#1: Исключение EXCEPTION_STACK_OVERFLOW (0xC00000FD) при выполнении кода по адресу 0x00448C23 в функции _Unwind_Backtrace() в модуле C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0x3208 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00448C23 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: _Unwind_Backtrace()
+# 1 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+# 2 0x777D7A7E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+# 3 0x777D7A4E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlGetAppContainerNamedObjectPath()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:38:36
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x777AFEE5 в функции RtlEnterCriticalSection(). Попытка записать данные по адресу 0x64206693 в модуле C:\WINDOWS\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0xE48 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x777AFEE5 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEnterCriticalSection()
+# 1 0x76AD88CE in C:\WINDOWS\System32\msvcrt.dll: unlock()
+# 2 0x76AE88BD in C:\WINDOWS\System32\msvcrt.dll: fgets()
+
+# 3 0x0041D919 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: number_lines_in_file() at C:/Users/User/Desktop/kekw/check/ONEGIN/main.cpp (44):
+
+     42:     int  i = 0;
+     43: 
+=>   44:     while (fgets (str, 100, in) != NULL) {
+     45: 
+     46:         ++i;
+
+# 4 0x76AB70F2 in C:\WINDOWS\System32\msvcrt.dll: msize()
+# 5 0x76AA6125 in C:\WINDOWS\System32\msvcrt.dll: _doserrno()
+# 6 0x76AC6EF9 in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 7 0x76AC6E3D in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 8 0x76AC6E23 in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 9 0x76AC6F2D in C:\WINDOWS\System32\msvcrt.dll: atexit()
+#10 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+#11 0x76ACCA67 in C:\WINDOWS\System32\msvcrt.dll: strerror_s()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:40:30
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x777AFEE5 в функции RtlEnterCriticalSection(). Попытка записать данные по адресу 0x64206693 в модуле C:\WINDOWS\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F92FC (32-bit), Flags: Cmdre0, Thread: 0xE48 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x777AFEE5 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEnterCriticalSection()
+# 1 0x76AD88CE in C:\WINDOWS\System32\msvcrt.dll: unlock()
+# 2 0x76AE88BD in C:\WINDOWS\System32\msvcrt.dll: fgets()
+
+# 3 0x0041D919 in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: number_lines_in_file() at C:/Users/User/Desktop/kekw/check/ONEGIN/main.cpp (44):
+
+     42:     int  i = 0;
+     43: 
+=>   44:     while (fgets (str, 100, in) != NULL) {
+     45: 
+     46:         ++i;
+
+# 4 0x76AB70F2 in C:\WINDOWS\System32\msvcrt.dll: msize()
+# 5 0x76AA6125 in C:\WINDOWS\System32\msvcrt.dll: _doserrno()
+# 6 0x76AC6EF9 in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 7 0x76AC6E3D in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 8 0x76AC6E23 in C:\WINDOWS\System32\msvcrt.dll: onexit()
+# 9 0x76AC6F2D in C:\WINDOWS\System32\msvcrt.dll: atexit()
+#10 0x004010FD in C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe: __mingw_CRTStartup()
+#11 0x76ACCA67 in C:\WINDOWS\System32\msvcrt.dll: strerror_s()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\User\Desktop\TX\TXLib.h
+Compiled:	Aug 25 2021 22:37:12, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Aug 25 2021 22:40:30
+
+Run file:	C:\Users\User\Desktop\kekw\check\ONEGIN\bin\Debug\ONEGIN.exe
+Directory:	C:\Users\User\Desktop\kekw\check\ONEGIN
+
+--------------------------------------------------
